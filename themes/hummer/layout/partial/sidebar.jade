@@ -1,0 +1,20 @@
+div#about-panel
+  - var about_info = theme.about_info;
+  div.info
+    .title= about_info.name
+    .url= config.url
+    .bio= about_info.bio
+  img.avatar(src=about_info.avatar)
+
+
+div#tags-cloud-panel
+    .archive
+        h3(class='archive-year')= 'Tag Cloud'
+        script(type='text/javascript', charset='utf-8', src=url_for("/js/tagcloud.js"))
+        script(type='text/javascript', charset='utf-8', src=url_for("/js/tagcanvas.js"))
+
+        #myCanvasContainer.widget.tagcloud(align='center')
+            canvas#resCanvas(width='200', height='160', style='width=100%')
+                !=tagcloud()
+
+  

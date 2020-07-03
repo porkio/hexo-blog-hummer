@@ -1,0 +1,37 @@
+# Nav Menus
+menu:
+    主页: /
+    随笔: /categories/articles/
+    javascript: /categories/javascript/
+    认知: /categories/cognition/
+    归档: /archives/
+    关于我: /about.html
+
+# Nav Shortcut Icons
+nav_icons:
+    - ['/images/github.svg', 'https://github.com/porkio']
+    - ['/images/rss.svg', '/atom.xml']
+
+favicon: /favicon.ico
+
+# About
+about_info:
+    name: "猪肉王子"
+    bio: "享受孤独"
+    avatar: "/images/avatar.png"
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo: 
+
+# Analytics
+# google_analytics: UA-65933410-1
+tencent_analytics: 775453777
+
+rss: /atom.xml
+
+# Copyright Infomation
+startyear: 2020
+
+
