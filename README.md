@@ -1,5 +1,6 @@
 ## 本仓库为博客整站代码（包含hexo框架和hummer主题）
 
+```
 npm install -g hexo-cli
 
 git clone https://github.com/porkio/hexo-blog-hummer.git hexo-blog
@@ -9,6 +10,7 @@ cd hexo-blog/
 npm install
 
 hexo server
+```
 
 ## 主题 hummer
 
@@ -20,26 +22,28 @@ hexo server
 
 在此之前确保 node npm 环境已安装
 
+```
 node -v
 
 npm -v
 
 cd themes/hummer
+```
 
 全局安装gulp脚手架
 
-npm install --global gulp-cli
+`npm install --global gulp-cli`
 
 在主题目录下再次安装gulp相关依赖
 
-npm install --save-dev gulp
+`npm install --save-dev gulp`
 
 如以上步骤没有error，则运行gulp命令即可编译sass文件
 
 如果有报错，首先尝试更换node版本，当你用到这个项目的时候，node版本可能已经较高，尝试版本回退可能会对你有所帮助。
 目前本项目使用node版本为 v8.11.1
 
-sudo n v8.11.1
+`sudo n v8.11.1`
 
 如果不是版本问题，则可以根据错误提示自行查阅资料，这同样也是高效学习的一种方式。
 
@@ -47,7 +51,7 @@ sudo n v8.11.1
 
 静态部署
 
-hexo generate or hexo g
+`hexo generate or hexo g`
 
 此时会在项目public文件夹下生成全站静态html文件，按照部署静态html站点的方法打包上传public文件夹内所有文件至服务器即可
 
